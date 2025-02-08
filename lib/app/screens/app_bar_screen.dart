@@ -1,4 +1,4 @@
-// screens/appbar_screen.dart
+// lib/app/screens/app_bar_screen.dart
 import 'package:flutter/material.dart';
 import 'whatsapp_screen.dart';
 import 'profile_screen.dart';
@@ -7,14 +7,14 @@ class AppBarScreen extends StatefulWidget {
   const AppBarScreen({super.key});
 
   @override
-  _AppBarScreenState createState() => _AppBarScreenState();
+  AppBarScreenState createState() => AppBarScreenState();
 }
 
-class _AppBarScreenState extends State<AppBarScreen> {
+class AppBarScreenState extends State<AppBarScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _screens = [
-    WhatsAppScreen(),
+    const WhatsAppScreen(),
     const ProfileScreen(),
   ];
 
